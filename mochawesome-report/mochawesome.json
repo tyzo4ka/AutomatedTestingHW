@@ -1,0 +1,464 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-05T18:04:53.736Z",
+    "end": "2023-10-05T18:04:53.749Z",
+    "duration": 13,
+    "testsRegistered": 9,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c2ace340-5713-4908-99d1-986d68e3e117",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e8bc484f-99dc-4f8b-ac14-b455b8d5b7cb",
+          "title": "getEvenNumbersFromArray",
+          "fullFile": "/Users/tyza/projects/epamJStesters/untitled/test/numbers-validator/getEvenNumbersFromArray.spec.js",
+          "file": "/test/numbers-validator/getEvenNumbersFromArray.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"getEvenNumbersFromArray\"",
+              "fullTitle": "getEvenNumbersFromArray \"before each\" hook in \"getEvenNumbersFromArray\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "validator = new NumbersValidator();",
+              "err": {},
+              "uuid": "19f4adc8-5e49-4a0b-aaaa-e5fd0e1d9586",
+              "parentUUID": "e8bc484f-99dc-4f8b-ac14-b455b8d5b7cb",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"getEvenNumbersFromArray\"",
+              "fullTitle": "getEvenNumbersFromArray \"after each\" hook in \"getEvenNumbersFromArray\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "validator = null;",
+              "err": {},
+              "uuid": "e1cb3bda-cb21-4147-9cb8-608cece607b0",
+              "parentUUID": "e8bc484f-99dc-4f8b-ac14-b455b8d5b7cb",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should return an array of even numbers",
+              "fullTitle": "getEvenNumbersFromArray should return an array of even numbers",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const arrayOfNumbers = [7, 8, 4, 13, 14];\nconst evenNumbersArray = validator.getEvenNumbersFromArray(arrayOfNumbers);\nexpect(evenNumbersArray).to.be.eql([8, 4, 14]);",
+              "err": {},
+              "uuid": "f3eb22ce-6782-4485-b1a0-0771f3550ad2",
+              "parentUUID": "e8bc484f-99dc-4f8b-ac14-b455b8d5b7cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error if array is not full of numbers",
+              "fullTitle": "getEvenNumbersFromArray should throw an error if array is not full of numbers",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const arrayOfValues = [2, 11, \"5\", \"8\", 16];\nexpect(() => {\n    validator.getEvenNumbersFromArray(arrayOfValues);\n}).to.throw('[2,11,5,8,16] is not an array of \"Numbers\"')",
+              "err": {},
+              "uuid": "0b8c3f13-cf2a-4e28-965b-0df1d390bca0",
+              "parentUUID": "e8bc484f-99dc-4f8b-ac14-b455b8d5b7cb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f3eb22ce-6782-4485-b1a0-0771f3550ad2",
+            "0b8c3f13-cf2a-4e28-965b-0df1d390bca0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "a540d34e-0033-4438-bc88-1bd5eea1cc88",
+          "title": "isAllNumbers positive tests",
+          "fullFile": "/Users/tyza/projects/epamJStesters/untitled/test/numbers-validator/isAllNumbers.spec.js",
+          "file": "/test/numbers-validator/isAllNumbers.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"isAllNumbers positive tests\"",
+              "fullTitle": "isAllNumbers positive tests \"before each\" hook in \"isAllNumbers positive tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "validator = new NumbersValidator();",
+              "err": {},
+              "uuid": "32d9f6e6-1167-4ceb-bb60-d852c89d54e2",
+              "parentUUID": "a540d34e-0033-4438-bc88-1bd5eea1cc88",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"isAllNumbers positive tests\"",
+              "fullTitle": "isAllNumbers positive tests \"after each\" hook in \"isAllNumbers positive tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "validator = null;",
+              "err": {},
+              "uuid": "520e6558-d1be-4382-a397-2519c3dcc17e",
+              "parentUUID": "a540d34e-0033-4438-bc88-1bd5eea1cc88",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should provide true if all are numbers",
+              "fullTitle": "isAllNumbers positive tests should provide true if all are numbers",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const validationResults = validator.isAllNumbers([2, 4, 1, 8, 90]);\nexpect(validationResults).to.be.equal(true);",
+              "err": {},
+              "uuid": "dc1ccbe8-e078-4ba5-bd3a-6760aed07603",
+              "parentUUID": "a540d34e-0033-4438-bc88-1bd5eea1cc88",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error if all are not numbers",
+              "fullTitle": "isAllNumbers positive tests should throw an error if all are not numbers",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n    validator.isAllNumbers('c');\n}).to.throw('[c] is not an array')",
+              "err": {},
+              "uuid": "44cf24ba-f24f-4ae0-a234-872095243a19",
+              "parentUUID": "a540d34e-0033-4438-bc88-1bd5eea1cc88",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dc1ccbe8-e078-4ba5-bd3a-6760aed07603",
+            "44cf24ba-f24f-4ae0-a234-872095243a19"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2ac4c08d-3e5d-4d29-8475-bc6861733636",
+          "title": "isInteger positive tests",
+          "fullFile": "/Users/tyza/projects/epamJStesters/untitled/test/numbers-validator/isInteger.spec.js",
+          "file": "/test/numbers-validator/isInteger.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"isInteger positive tests\"",
+              "fullTitle": "isInteger positive tests \"before each\" hook in \"isInteger positive tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "validator = new NumbersValidator();",
+              "err": {},
+              "uuid": "3c0c17a6-184c-40b2-a81c-4db61afac42c",
+              "parentUUID": "2ac4c08d-3e5d-4d29-8475-bc6861733636",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"isInteger positive tests\"",
+              "fullTitle": "isInteger positive tests \"after each\" hook in \"isInteger positive tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "validator = null;",
+              "err": {},
+              "uuid": "3400d029-b2a2-49d8-918f-2e05e443574f",
+              "parentUUID": "2ac4c08d-3e5d-4d29-8475-bc6861733636",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should provide true with a number",
+              "fullTitle": "isInteger positive tests should provide true with a number",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const validationResults = validator.isInteger(3);\nexpect(validationResults).to.be.equal(true);",
+              "err": {},
+              "uuid": "b2972988-54fc-4a36-81e2-099bd64a1433",
+              "parentUUID": "2ac4c08d-3e5d-4d29-8475-bc6861733636",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error when provided a string",
+              "fullTitle": "isInteger positive tests should throw an error when provided a string",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n    validator.isInteger('7');\n}).to.throw('[7] is not a number');",
+              "err": {},
+              "uuid": "5d470b17-d576-4316-bcef-1adbfac8ca04",
+              "parentUUID": "2ac4c08d-3e5d-4d29-8475-bc6861733636",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b2972988-54fc-4a36-81e2-099bd64a1433",
+            "5d470b17-d576-4316-bcef-1adbfac8ca04"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "b807911f-7b4b-45cd-ad9a-303007e37173",
+          "title": "isNumberEven positive tests",
+          "fullFile": "/Users/tyza/projects/epamJStesters/untitled/test/numbers-validator/isNumberEven.spec.js",
+          "file": "/test/numbers-validator/isNumberEven.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"isNumberEven positive tests\"",
+              "fullTitle": "isNumberEven positive tests \"before each\" hook in \"isNumberEven positive tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "validator = new NumbersValidator();",
+              "err": {},
+              "uuid": "e422f85b-75e2-4e99-865a-80cc561339a4",
+              "parentUUID": "b807911f-7b4b-45cd-ad9a-303007e37173",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"isNumberEven positive tests\"",
+              "fullTitle": "isNumberEven positive tests \"after each\" hook in \"isNumberEven positive tests\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "validator = null;",
+              "err": {},
+              "uuid": "2db7f7b8-28b7-41a4-bc0c-f46a5c98d130",
+              "parentUUID": "b807911f-7b4b-45cd-ad9a-303007e37173",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should provide true with an even number",
+              "fullTitle": "isNumberEven positive tests should provide true with an even number",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const validationResults = validator.isNumberEven(4);\nexpect(validationResults).to.be.equal(true);",
+              "err": {},
+              "uuid": "1adf84d0-e5d8-4893-a4de-2c986099419a",
+              "parentUUID": "b807911f-7b4b-45cd-ad9a-303007e37173",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should provide false with an odd number",
+              "fullTitle": "isNumberEven positive tests should provide false with an odd number",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const validationResults = validator.isNumberEven(5);\nexpect(validationResults).to.be.equal(false);",
+              "err": {},
+              "uuid": "225e143c-77fd-476d-89ed-e22089a984b6",
+              "parentUUID": "b807911f-7b4b-45cd-ad9a-303007e37173",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error when provided a string",
+              "fullTitle": "isNumberEven positive tests should throw an error when provided a string",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(() => {\n    validator.isNumberEven('4');\n}).to.throw('[4] is not of type \"Number\" it is of type \"string\"')",
+              "err": {},
+              "uuid": "46b74d32-6cfe-4989-8484-bea81c0f8696",
+              "parentUUID": "b807911f-7b4b-45cd-ad9a-303007e37173",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1adf84d0-e5d8-4893-a4de-2c986099419a",
+            "225e143c-77fd-476d-89ed-e22089a984b6",
+            "46b74d32-6cfe-4989-8484-bea81c0f8696"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
