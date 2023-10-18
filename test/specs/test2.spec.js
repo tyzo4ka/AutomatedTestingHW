@@ -6,7 +6,14 @@ describe('basic WDIO Commands', () => {
 
         await $('#username').setValue('tomsmith')
         await $('#password').setValue('SuperSecretPassword!')
-        await $('button[type="submit"]').click()
+
+        browser.addCommand("waitAndClick", async function () {
+            // `this` is return value of $(selector)
+            await this.waitForDisplayed()
+            await this.click()
+        }, true)
+        
+        await $('button[type="submit"]').waitAndClick()
 
         await expect($('#flash')).toBeExisting()
         await expect($('#flash')).toHaveTextContaining(
@@ -43,8 +50,8 @@ describe('basic WDIO Commands', () => {
 
         const isExisting = await scriptElement.isExisting()
         console.log(isExisting); // outputs: true
-        
+
     })
-    
+
 })
 
