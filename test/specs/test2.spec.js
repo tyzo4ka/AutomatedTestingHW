@@ -12,7 +12,7 @@ describe('basic WDIO Commands', () => {
             await this.waitForDisplayed()
             await this.click()
         }, true)
-        
+
         await $('button[type="submit"]').waitAndClick()
 
         await expect($('#flash')).toBeExisting()
